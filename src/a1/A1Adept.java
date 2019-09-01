@@ -65,8 +65,8 @@ public class A1Adept {
 			}
 		}
 		
-		double b = biggest(total, cust);
-		double s = smallest(total, cust);
+		double b = biggest(total);
+		double s = smallest(total);
 		double a = avg(total);
 //		String ba = Double.toString(b);
 //		String sa = Double.toString(s);
