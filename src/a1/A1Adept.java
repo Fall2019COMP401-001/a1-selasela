@@ -107,7 +107,7 @@ public class A1Adept {
 		double ans = money[0];
 		int trac = 0;
 		for (int i=0; i<money.length; i++) {
-			if (money[i]>ans) {
+			if (money[i]>=ans) {
 				trac = i;
 			}
 		}
@@ -128,7 +128,7 @@ public class A1Adept {
 		double ans = money[0];
 		int trac = 0;
 		for (int i=0; i<money.length; i++) {
-			if (money[i]<ans) {
+			if (money[i]<=ans) {
 				trac = i;
 			}
 		}
