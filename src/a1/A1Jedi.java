@@ -17,6 +17,8 @@ public class A1Jedi {
 		
 		for (int i=0; i<itemAmt; i++) {
 			storeItems[i] = scan.next();
+			@SuppressWarnings("unused")
+			double blah = scan.nextDouble();
 		}
 		// looping through the list to fill in above array
 		
@@ -27,15 +29,15 @@ public class A1Jedi {
 		int[] cust = new int[itemAmt];
 		// array of how many customers bought a certain item
 		
-		double[] total = new double[itemAmt];
+		int[] total = new int[itemAmt];
 		// array to track how many of each item was bought
 		
 		for (int i=0; i<custNum; i++) {
 			
-//			@SuppressWarnings("unused")
-//			String first = scan.next();
-//			@SuppressWarnings("unused")
-//			String last = scan.next();
+			@SuppressWarnings("unused")
+			String first = scan.next();
+			@SuppressWarnings("unused")
+			String last = scan.next();
 //			// scanning for first and last name
 //			
 			// cust[i] = first + " " + last;
@@ -68,7 +70,7 @@ public class A1Jedi {
 			if(total[i]==0) {
 				System.out.println("No customers bought " + storeItems[i]);
 			} else {
-				System.out.println(cust[i] + " customers bought " + total[i] + storeItems[i]);
+				System.out.println(cust[i] + " customers bought " + total[i] + " " + storeItems[i]);
 			}
 		}
 		// for loop
