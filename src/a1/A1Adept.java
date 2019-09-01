@@ -80,8 +80,11 @@ public class A1Adept {
 //		// call helper functions for biggest, smallest, and avg
 //		// use cust and total arrays as arguments
 		
-		System.out.println("Biggest: " + cust[idBig(total, cust)] + " (" + ba + ")");
-		System.out.println("Smallest: " + cust[idSmall(total, cust)] + " (" + sa + ")");
+		int x = idBig(total);
+		int y = idSmall(total);
+		
+		System.out.println("Biggest: " + cust[x] + " (" + ba + ")");
+		System.out.println("Smallest: " + cust[y] + " (" + sa + ")");
 		System.out.println("Average: " + aa);
 		// print output
 		// how do i get name in the print?
@@ -93,7 +96,7 @@ public class A1Adept {
 	}
 		
 		
-	static double biggest(double[] money, String[] people) {
+	static double biggest(double[] money) {
 		double ans = money[0];
 		for (int i=0; i<money.length; i++) {
 			if (money[i]>ans) {
@@ -103,18 +106,18 @@ public class A1Adept {
 		return ans;
 	}
 	
-	static int idBig (double[] money, String[] people) {
+	static int idBig (double[] money) {
 		double ans = money[0];
 		int trac = 0;
 		for (int i=0; i<money.length; i++) {
-			if (money[i]>=ans) {
+			if (money[i]>ans) {
 				trac = i;
 			}
 		}
 		return trac;
 	}
 	
-	static double smallest(double[] money, String[] people) {
+	static double smallest(double[] money) {
 		double ans = money[0];
 		for (int i=0; i<money.length; i++) {
 			if (money[i]<ans) {
@@ -124,11 +127,11 @@ public class A1Adept {
 		return ans;
 	}
 	
-	static int idSmall (double[] money, String[] people) {
+	static int idSmall (double[] money) {
 		double ans = money[0];
 		int trac = 0;
 		for (int i=0; i<money.length; i++) {
-			if (money[i]<=ans) {
+			if (money[i]<ans) {
 				trac = i;
 			}
 		}
