@@ -27,7 +27,9 @@ public class A1Novice {
 				double sale = quantity*howMuch;
 				total += sale;
 			}
-			String listing = firstIn + last + ": " + total;
+			
+			String deci = String.format("%.2f", total);
+			String listing = firstIn + last + ": " + deci;
 			
 			System.out.println(listing);
 		}
