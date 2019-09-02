@@ -54,13 +54,15 @@ public class A1Jedi {
 				//double spent = 0;
 				
 				for (int x=0; x<itemAmt; x++) {
-					if (item.compareTo(storeItems[x]) == 0) {
+					if (item.compareTo(storeItems[x]) == 0 && total[x]>quant) {
+						total[x]+=quant;
+					} else if (item.compareTo(storeItems[x]) == 0){
 						total[x]+=quant;
 						// adds count on item
 						cust[x]+=1;
 					}
 				}
-			
+				
 			}
 		}
 		
